@@ -1,0 +1,42 @@
+/* Resest */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  list-style: none;
+}
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 3.1rem;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 5.1rem;
+  }
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+@media only screen and (min-width: 768px) {
+  section {
+    flex-wrap: nowrap;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
