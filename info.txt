@@ -1,0 +1,29 @@
+{
+  "name": "Abdul Qadir",
+  "gender": "Male",
+  "Age": "29",
+  "email": "qad3r89@gmail.com",
+  "HomeAddress": [
+    {
+      "Flat": "207",
+      "Street": "Caspian Way",
+      "Town": "Purfleet"
+    }
+  ],
+  "Experience": [
+    {
+      "id": 0,
+      "Company name": "Eprospects",
+      "Title": "Frontend Developer",
+    },
+    {
+      "id": 1,
+      "Company name": "Dennis Publishing",
+      "Title": "Frontend Developer",
+    {
+      "id": 2,
+      "Company name": "FitnessGenes",
+      "Title": "Frontend Developer",
+    }
+  ]
+}
