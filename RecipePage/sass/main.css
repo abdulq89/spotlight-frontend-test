@@ -167,5 +167,32 @@ section article .main-content .ingredients-content .extra-info .directions ul li
 section article .main-content .ingredients-content .extra-info .ingredients ul {
   color: #ae4a2e;
 }
+section .facts {
+  width: 200px;
+  margin-left: auto;
+  font-size: 0.8rem;
+  color: #ae4a2e;
+}
+section .facts h3 {
+  margin-bottom: 0.2rem;
+  font-style: italic;
+}
+section .recipe-img {
+  order: 2;
+}
+@media only screen and (min-width: 768px) {
+  section .recipe-img {
+    max-width: 115%;
+    order: 3;
+  }
+}
+section .recipe-img img {
+  max-width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  section .recipe-img img {
+    max-width: 115%;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
