@@ -1,9 +1,10 @@
 // reset
-body, ul, li, h1 {
+body, ul, li, h1, a {
 	margin:0;
 	padding:0;
 	list-style:none;
 	font-family: sans-serif;
+	text-decoration: none;
 }
 * {
 	box-sizing:border-box;
@@ -13,7 +14,10 @@ header {
 	background: #333;
 	padding:10px;
 	overflow:hidden;
-	text-align:right;
+	text-align:center;
+	@media only screen and (min-width: 480px) {
+		text-align:right;
+	}
 	ul {
 		list-style:none;
 		padding-top:8px;
@@ -25,11 +29,14 @@ header {
 	}
 	a {
 		color:#fff;
+		text-decoration: none;
 	}
 	
 	img {
 		height:30px;
-		float:left;
+		@media only screen and (min-width: 480px) {
+			float:left;
+		}
 	}
 }
 
@@ -40,8 +47,13 @@ h1 {
 	background-size:cover;
 	text-align:center;
 	color:#fff;
-	font-size: 70px;
-	margin-bottom:20px;
+	font-size: 40px;
+	font-family: Montserrat;
+	font-weight: 800;
+	line-height: 1;
+	@media only screen and (min-width: 480px) {
+		font-size: 70px;
+	}
 }
 
 footer {
@@ -51,27 +63,40 @@ footer {
 }
 
 .centered {
-	max-width:800px;
+	max-width:400px;
 	margin-left:auto;
 	margin-right:auto;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	@media only screen and (min-width: 480px) {
+		max-width:600px;
+	}
+	@media only screen and (min-width: 768px) {
+		max-width:800px;
+	}
 }
 
 .articleList {
-	&:after {
-		content:"";
-		clear:both;
-		display:table;
-	}
+	display: flex;
+	flex-wrap: wrap;
 	margin-bottom:20px;
-	
+	margin-left: -5px;
+	margin-right: -5px;
 
 	li {
-		width:33%;
-		float:left;
+		width:100%;
 		padding:5px;
+		display: flex;
+		flex-grow: 1;
+		word-break: break-word;
+		@media only screen and (min-width: 480px) {
+			width:50%;
+		}
+		@media only screen and (min-width: 768px) {
+			width:33%;
+		}
 	}
 	img {
-		display:block;
 		width:100%;
 	}
 	
@@ -80,21 +105,35 @@ footer {
 		border: 1px solid #dadada;
 		text-decoration:none;
 		color:inherit;
+		position: relative;
+		.link-cover {
+			&:after {
+				content: '';
+			    position: absolute;
+			    left: 0;
+			    top: 0;
+			    right: 0;
+			    bottom: 0;
+			}
+		}
 	}
 	.section {
 		padding-bottom:5px;
 	}
 	.articleInfo {
 		padding:15px;
-	}
-	.title {
-		font-size:20px;
-	}
-	
-	.category {
-		color:#ea5d5a
-	}
-	.category:hover{
-		text-decoration:underline;
+		.category {
+			position: relative;
+			z-index: 1;
+			a {
+				color:#ea5d5a;
+			}
+			&:hover{
+				text-decoration:underline;
+			}
+		}
+		.title {
+			font-size:20px;
+		}
 	}
 }
