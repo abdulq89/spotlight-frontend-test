@@ -4,16 +4,16 @@ function Question1(inputArray) {
 	// DUPLICATE AN ARRAY
 	// You should write a function that repeats an array twice and returns it.
 	// The original array should not be modified.
-	
-	return undefined;
+	var duplicateArray = inputArray.concat(inputArray);
+	return duplicateArray;
 }
 
 function Question2(inputArray) {
 	// REVERSE AN ARRAY
 	// You should write a function that reverses an array and returns it.
 	// The original array should not be modified.
-	
-	return undefined;
+	var reverseArray = inputArray.slice().reverse();
+	return reverseArray;
 }
 
 function Question3(inputArray, itemToFind) {
