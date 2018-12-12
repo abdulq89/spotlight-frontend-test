@@ -93,5 +93,79 @@ section aside .info p span {
   font-style: italic;
   display: block;
 }
+section article {
+  width: 100%;
+  order: 2;
+}
+@media only screen and (min-width: 768px) {
+  section article {
+    flex: 0 0 50%;
+    order: 1;
+  }
+}
+section article .main-content {
+  padding: 0 2rem;
+}
+section article .main-content h1 {
+  margin: 1rem 0;
+  line-height: 0.8;
+}
+section article .main-content h1 span {
+  display: block;
+  font-size: 2.2rem;
+  color: #ae4a2e;
+}
+@media only screen and (min-width: 768px) {
+  section article .main-content h1 span {
+    font-size: 3.2rem;
+  }
+}
+section article .main-content .large::first-letter {
+  font-weight: bold;
+  float: left;
+  font-size: 3.5rem;
+  padding-right: 0.5rem;
+}
+section article .main-content .ingredients-content {
+  border-bottom: 4px solid #ae4a2e;
+  font-size: 0.9rem;
+}
+section article .main-content .ingredients-content .dt-tr {
+  display: flex;
+  background: #ae4a2e;
+  color: white;
+  padding: 0.2rem 0.5rem;
+}
+section article .main-content .ingredients-content .dt-tr > div {
+  flex: 1;
+}
+section article .main-content .ingredients-content .dt-tr .dt-th {
+  font-style: italic;
+}
+section article .main-content .ingredients-content .dt-tr .dt-th:nth-of-type(2) {
+  margin-left: 5rem;
+}
+section article .main-content .ingredients-content .extra-info {
+  display: flex;
+}
+section article .main-content .ingredients-content .extra-info > div {
+  flex: 1;
+}
+section article .main-content .ingredients-content .extra-info .directions ul {
+  counter-reset: section;
+  padding-left: 1.5rem;
+  position: relative;
+}
+section article .main-content .ingredients-content .extra-info .directions ul li:before {
+  counter-increment: section;
+  content: counter(section) ".";
+  color: #ae4a2e;
+  font-weight: bold;
+  position: absolute;
+  left: 5px;
+}
+section article .main-content .ingredients-content .extra-info .ingredients ul {
+  color: #ae4a2e;
+}
 
 /*# sourceMappingURL=main.css.map */
